@@ -22,14 +22,22 @@ public class GitDemo {
     }
     
     /*****
-     * Description of function goes here
+     * This function should calculate the factorial of 'num' and return the resulting value.
+     * i.e. if num = 4;
+     *  the function will return the value of (1 * 2 * 3 * 4)
      *
-     * @param - description of passed in arguments go here
-     * @return - description of return value goes here
+     * @param num - number to calculate the factorial of
+     * @return factorialNumber - the factorial value of 'num'
      *****/
     public void templateFunction(int num) {
+        double factorialNumber = 0;
         
-        /** Code goes here **/
+        while(num!=0) {
+            double temp = num%10;
+            factorialNumber = factorialNumber * 10 + temp;
+            num/=10;
+        }
         
+        return factorialNumber;   
     }
 }
