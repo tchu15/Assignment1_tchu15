@@ -1,5 +1,5 @@
 /*****
- * Edit this line to have your name.
+ * Thuytien Chu 2nd commit
  ******/
 public class GitDemo {
     
@@ -17,7 +17,9 @@ public class GitDemo {
      * @return the updated value of 'previousNumber'
     *****/
     public double addNumber(double num) {
-        System.out.print("Add num to previousNumber");
+        System.out.print("Add num " + num + "to previousNumber " + previousNumber + "\n");
+        previousNumber+=num;
+        System.out.print("Previous number is now: " + previousNumber);
         return 0;
     }
     
@@ -29,7 +31,7 @@ public class GitDemo {
      * @param num - number to calculate the factorial of
      * @return factorialNumber - the factorial value of 'num'
      *****/
-    public void templateFunction(int num) {
+    public double function1(int num) {
         double factorialNumber = 0;
         
         while(num!=0) {
@@ -38,6 +40,22 @@ public class GitDemo {
             num/=10;
         }
         
-        return factorialNumber;   
+        return factorialNumber;
+    }
+
+     * This function should reverse 'num' and return the resulting value.
+     * i.e. if num = 1234
+     *  the function will return 4321
+     * @param num - number to reverse the digits on (description of passed in arguments go here)
+     * @return newNumber - the reverse of 'num' (description of return value goes here)
+     *****/
+    public double function2(int num) {
+        double newNumber = 1;
+        
+        for(int i=1; i<=num; ++i) {
+            newNumber = newNumber*i;
+        }
+        
+        return newNumber;        
     }
 }
