@@ -1,5 +1,5 @@
 /*****
- * Thuytien Chu
+ * Thuytien Chu 2nd commit
  ******/
 public class GitDemo {
     
